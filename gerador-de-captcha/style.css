@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11131e;
+}
+.container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 25px 25px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #11131e;
+}
+header {
+    color: #11131e;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.input_field {
+    position: relative;
+    height: 45px;
+    margin-top: 15px;
+    width: 100%;
+}
+.refresh_button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #11131e;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+.refresh_button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+.input_field input,
+.button button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+.input_field input {
+    padding: 0 15px;
+    border:  1px solid rgba(0 0 0 / 0.1);
+}
+.capch_box input {
+    color: #11131e;;
+    font-size: 22px;
+    pointer-events: none;
+}
+.capch_input input:focus {
+    box-shadow: 0 1PX 1PX #000;
+}
+.message {
+    font-size: 14px;
+    margin: 14px 0;
+    color: #11131e;
+    display: none;
+}
+.message.active {
+    display: block;
+}
+.button button {
+    background: #11131e;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+}
+.button button:active {
+    transform: scale(0.99);
+}
+.button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}

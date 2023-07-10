@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+
+        <header>Captcha Generator</header>
+
+        <div class="input_field captch_box">
+            <input type="text" value="" disabled />
+            <button class="refresh_button">
+                <i class="fa-solid fa-rotate-right">
+                    <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.25 4.75 8.75 7l2.5 2.25"></path>
+                        <path d="m12.75 19.25 2.5-2.25-2.5-2.25"></path>
+                        <path d="M9.75 7h3.5a6 6 0 0 1 6 6v.25"></path>
+                        <path d="M14.25 17h-3.5a6 6 0 0 1-6-6v-.25"></path>
+                  </svg>
+                </i>
+            </button>
+
+        </div>
+
+        <div class="input_field captch_input">
+            <input type="text" placeholder="Enter captcha" />
+        </div>
+
+        <div class="message">Entered captcha is correct</div>
+        
+        <div class="input_field button disabled">
+            <button>Submit</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
